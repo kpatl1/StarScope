@@ -35,7 +35,7 @@ struct UserView: View {
     }
     private var horoscopeText: some View{
         HStack(spacing: HstackSpacing){
-            Text(user.horoscopeText)
+            Text(user.description)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .offset(x:HStackOffset)
         }

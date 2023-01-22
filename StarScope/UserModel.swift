@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct User {
-    let id = UUID()
+struct User: Codable {
     let name: String
     let sign: String
-    let horoscopeText: String
+    let description: String
+    let current_date: String
 }
 
 
 
 extension User {
     static var example: User {
-        User(name: "kishan", sign: "virgo", horoscopeText: "Contact is key.")
+        User(name: "kishan", sign: "virgo", description: "Contact is key.", current_date: "today")
         
     }
 }

@@ -11,7 +11,7 @@ struct UserFeedView: View {
     let feed: Feed
     var body: some View {
         ScrollView{
-            ForEach(feed.users, id: \.id)
+            ForEach(feed.users, id: \.name)
             {(user) in
                 UserView(user: user)
             }
